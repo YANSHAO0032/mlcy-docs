@@ -1,16 +1,16 @@
 ---
-title: Guide
+title: 指南
 icon: lightbulb
 ---
 
-## Highlight Features
+## 功能亮点
 
 ### Bar
 
-- [baz](bar/baz.md)
+- [baz](src/guide/bar/baz.md)
 - ...
 
 ### Foo
 
-- [ray](foo/ray.md)
+- [ray](src/guide/foo/ray.md)
 - ...
