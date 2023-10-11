@@ -31,10 +31,6 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
     },
   },
 
