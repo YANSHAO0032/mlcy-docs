@@ -10,6 +10,8 @@ export default hopeTheme({
     url: "https://github.com/YANSHAO0032/mlcy-docs",
   },
 
+  pageInfo :["Author","Word","Date","Original","Category","Tag","ReadingTime","PageView"],
+
   iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.svg",
