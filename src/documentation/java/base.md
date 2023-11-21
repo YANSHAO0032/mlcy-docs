@@ -223,4 +223,35 @@ __CGLIB代理__：
 
 一般在英文状态下一个字母或者字符占用一个字节，一个汉字占用两个字节
 
+### 33.String为什么设计成不可变类？
 
+1. 便于实现字符串池
+2. 多线程安全
+3. 避免安全问题
+4. 加快字符串处理速度
+
+### 34.String、StringBuilder、StringBuffer的区别
+
+- 从可变性来讲，String是不可变的，StringBuilder和StringBuffer的长度是可变的
+- 从运行速度来讲 StringBuilder > StringBuffer > String
+- 从线程安全来讲 StringBuilder是线程不安全的，StringBuffer是线程安全的
+
+  所以String适用于少量的字符串操作的情况，StringBuilder适用于单线程下在字符缓冲区进行大量操作的情况，StingBuffer适用多线程下在字符缓冲区进行大量操作的情况
+
+### 35.String str = "i" 与 String str = new String("i")一样吗？
+
+不一样，因为内存分配的方式不一样。String str = "i"的方式，Java虚拟机会将其分配到常量池中；而String str = new String("i")则会被分到堆内存中
+
+### 36.String类的常用方法有哪些？
+
+- indexOf():返回指定字符的索引
+- charAt():返回指定索引处的字符
+- replace():字符串替换
+- trim():字符串替换
+- split():分割字符串
+- getBytes():返回字符串的byte类型数组
+- length():返回字符串长度
+- toLowerCase():将字符串转成小写字母
+- toUpperCase():将字符串转成大写字母
+- subString():截取字符串
+- equals():字符串比较
